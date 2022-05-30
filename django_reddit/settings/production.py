@@ -5,7 +5,7 @@ Production Configurations
 - Use djangosecure
 - Use mailgun to send emails
 '''
-from django.utils import six
+import six
 
 from .common import *  # noqa
 
@@ -26,6 +26,15 @@ INSTALLED_APPS += ("djangosecure", )
 SECURITY_MIDDLEWARE = (
     'djangosecure.middleware.SecurityMiddleware',
 )
+
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+]
 
 MIDDLEWARE_CLASSES = ()
 # Make sure djangosecure.middleware.SecurityMiddleware is listed first
