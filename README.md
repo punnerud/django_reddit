@@ -1,9 +1,9 @@
-#Django reddit
+# Django reddit
 Reddit clone written in python using django web framework and twitter's bootstrap.
 
 [![Build Status](https://travis-ci.org/Nikola-K/django_reddit.svg)](https://travis-ci.org/Nikola-K/django_reddit) [![Coverage Status](https://coveralls.io/repos/Nikola-K/django_reddit/badge.svg?branch=master&service=github)](https://coveralls.io/github/Nikola-K/django_reddit?branch=master)
 
-#Screenshots
+# Screenshots
 
 ![desktop_frontpage](_screenshots/desktop_frontpage%202015-06-22.jpg)
 
@@ -21,7 +21,7 @@ Fully responsive:
 
 ![mobile_thread](_screenshots/mobile_thread%202015-06-22.png?raw=true)
 
-#Getting up and running
+# Getting up and running
 
 The project is python 3 only.
 
@@ -39,11 +39,11 @@ First make sure to create and activate a virtualenv, then open a terminal at the
     
 For the time being there is no separate production specific settings because the project is not yet production ready.
 
-#Deployment
+# Deployment
 
 * TODO: Write here how to deploy
 
-#License
+# License
 
     Copyright 2016 Nikola Kovacevic <nikolak@outlook.com>
 
